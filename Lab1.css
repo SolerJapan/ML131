@@ -1,0 +1,74 @@
+.box1 {
+  position: relative;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+.box1:hover {
+  background-color: red;
+  animation-name: red1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.box1:hover ~ .box2 {
+  background-color: blue;
+  animation-name: blue1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.box2{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+/*.box2:hover {
+  background-color: blue;
+  animation-name: blue1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}*/
+@keyframes red1 {  
+  0%{
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  50%{
+    width: 200px;
+    height: 100px;
+    background: red;                                       
+  }
+  100%{
+    width: 200px;
+    height: 100px;
+    background: red;                                       
+  }
+}
+@keyframes blue1 {  
+  0%{
+    width: 100px;
+    height: 100px;
+    background: blue;    
+  }
+   50%{
+    width: 200px;
+    height: 100px;
+    background: blue;                                       
+  }
+  100%{
+    width: 200px;
+    height: 100px;
+    background: blue;                                       
+  }
+}
